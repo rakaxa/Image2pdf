@@ -66,6 +66,8 @@ class PDF():
   def done(self, pdfFile):
     pdfFile.save()
 
+    return
+
 
 def main():
 
