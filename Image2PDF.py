@@ -81,7 +81,7 @@ def main():
     quit()
 
 #  pdfFile = canvas.Canvas("./" + keyword + ".pdf")
-  pdfFile = canvas.Canvas("./" + unicode(keyword, 'shift-jis') + ".pdf")  # for Windows
+  pdfFile = canvas.Canvas(unicode(keyword, 'shift-jis') + ".pdf")  # for Windows
   pdf.setparam(pdfFile)
 
   search_path = os.path.normpath("./" + keyword + "/*")
